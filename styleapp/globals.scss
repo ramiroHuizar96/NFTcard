@@ -1,4 +1,76 @@
+//Colors
+//Primary
+
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+//Neutral
+
+$mainBG: hsl(217, 54%, 11%);
+$cardBG: hsl(216, 50%, 16%);
+$VeryDarkblueLine: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
+    font-family: 'outfit', sans-serif;
+    font-size: 1.125rem;
+    color: $White;
+    background-color: $mainBG;
+    position: relative;
+    display: block;
+
+    .content__wrapper{
+        position: relative;
+        background-color: $cardBG;
+        border-radius: 15px;
+        height: 625px;
+        width: 375px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .NFT_img{
+            max-width: 20.4375rem;
+            border: 0;
+            border-radius: 10px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+
+    }
+}  
+
+.author_img{
+    max-width: 2.1rem;
+    
+}
+
+//positioning 
+
+.flex{
+    display: flex;
+}
+
+.padding{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.top{
+    padding-top: 1.5rem;
+}
+
+//font coloring 
+.grey{
+    color: $softBlue;
+}
+
+.cyan{
+    color: $cyan;
 }

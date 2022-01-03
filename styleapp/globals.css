@@ -2,4 +2,61 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: 'outfit', sans-serif;
+  font-size: 1.125rem;
+  color: white;
+  background-color: #0d192b;
+  position: relative;
+  display: block;
+}
+
+body .content__wrapper {
+  position: relative;
+  background-color: #14253d;
+  border-radius: 15px;
+  height: 625px;
+  width: 375px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .content__wrapper .NFT_img {
+  max-width: 20.4375rem;
+  border: 0;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.author_img {
+  max-width: 2.1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.padding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.top {
+  padding-top: 1.5rem;
+}
+
+.grey {
+  color: #8bacda;
+}
+
+.cyan {
+  color: #00fff7;
+}
 /*# sourceMappingURL=globals.css.map */
