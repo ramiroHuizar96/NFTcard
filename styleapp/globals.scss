@@ -34,15 +34,11 @@ body{
         transform: translateX(-50%);
 
         .NFT_img{
-            max-width: 20.4375rem;
+            display: cover;
+            width: 20.4375rem;
             border: 0;
-            border-radius: 10px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            border-radius: 20px;
         }
-        
-
     }
 }  
 
@@ -73,4 +69,16 @@ body{
 
 .cyan{
     color: $cyan;
+}
+
+//link color and style 
+
+.link{
+    text-decoration: none;
+    color: $White;
+    border: none;
+
+    :hover{
+        color: $cyan;
+    }
 }
