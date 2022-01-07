@@ -7,6 +7,7 @@ $cyan: hsl(178, 100%, 50%);
 //Neutral
 
 $mainBG: hsl(217, 54%, 11%);
+$shadow: hsl(218, 57%, 9%);
 $cardBG: hsl(216, 50%, 16%);
 $VeryDarkblueLine: hsl(215, 32%, 27%);
 $White: hsl(0, 0%, 100%);
@@ -22,29 +23,57 @@ body{
     color: $White;
     background-color: $mainBG;
     position: relative;
-    display: block;
+    height: 100vh;
 
     .content__wrapper{
-        position: relative;
+        position: absolute;
         background-color: $cardBG;
         border-radius: 15px;
         height: 625px;
         width: 375px;
+        box-shadow: 5px 20px 10px 20px $shadow;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
 
         .NFT_img{
-            display: cover;
+            max-height: 100%;
             width: 20.4375rem;
-            border: 0;
-            border-radius: 20px;
+            border-radius: 30px;
+            
         }
+
+        .over-lay{
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            right: 1.5rem;
+            bottom: 17rem;
+            background-color: $cyan;
+            border-radius: 10px;
+            opacity: 0;
+            cursor: pointer;
+
+            .view-icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)
+            }
+        }
+        .over-lay:hover{
+            opacity: .75;
+        }
+
     }
 }  
 
 .author_img{
     max-width: 2.1rem;
     
+}
+.eth_date{
+    font-weight: bold;
 }
 
 //positioning 
@@ -60,6 +89,28 @@ body{
 
 .top{
     padding-top: 1.5rem;
+}
+.bottom{
+    padding-bottom: .7rem;
+}
+.space{
+    justify-content: space-between;
+}
+.evenly{
+    justify-items: left;
+    align-items: center;
+}
+.author_name{
+    padding-left: 1rem;
+}
+
+//margin for border 
+.margin{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.top_padding{
+    padding-top: 1rem;
 }
 
 //font coloring 
@@ -78,7 +129,35 @@ body{
     color: $White;
     border: none;
 
-    :hover{
+    &:hover{
         color: $cyan;
+    }
+}
+
+//border 
+
+.border{
+    border-top: solid .5px hsl(215, 32%, 27%);
+}
+
+.author_img{
+    border: solid 1px $White;
+    border-radius: 50px;
+}
+
+//attribution
+
+.attribution{
+    text-align: center;
+    color: $VeryDarkblueLine;
+    font-size: 1rem;
+    a{
+        text-decoration: none;
+        color: $softBlue;
+
+        &:hover{
+            color: $cyan;
+            border-bottom: solid 1px $cyan;
+        }
     }
 }

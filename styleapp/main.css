@@ -9,29 +9,59 @@ body {
   color: white;
   background-color: #0d192b;
   position: relative;
-  display: block;
+  height: 100vh;
 }
 
 body .content__wrapper {
-  position: relative;
+  position: absolute;
   background-color: #14253d;
   border-radius: 15px;
   height: 625px;
   width: 375px;
+  -webkit-box-shadow: 5px 20px 10px 20px #0a1324;
+          box-shadow: 5px 20px 10px 20px #0a1324;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 body .content__wrapper .NFT_img {
-  display: cover;
+  max-height: 100%;
   width: 20.4375rem;
-  border: 0;
-  border-radius: 20px;
+  border-radius: 30px;
+}
+
+body .content__wrapper .over-lay {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 17rem;
+  background-color: #00fff7;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+body .content__wrapper .over-lay .view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .content__wrapper .over-lay:hover {
+  opacity: .75;
 }
 
 .author_img {
   max-width: 2.1rem;
+}
+
+.eth_date {
+  font-weight: bold;
 }
 
 .flex {
@@ -49,6 +79,36 @@ body .content__wrapper .NFT_img {
   padding-top: 1.5rem;
 }
 
+.bottom {
+  padding-bottom: .7rem;
+}
+
+.space {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.evenly {
+  justify-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author_name {
+  padding-left: 1rem;
+}
+
+.margin {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.top_padding {
+  padding-top: 1rem;
+}
+
 .grey {
   color: #8bacda;
 }
@@ -63,7 +123,32 @@ body .content__wrapper .NFT_img {
   border: none;
 }
 
-.link :hover {
+.link:hover {
   color: #00fff7;
+}
+
+.border {
+  border-top: solid 0.5px #2f415b;
+}
+
+.author_img {
+  border: solid 1px white;
+  border-radius: 50px;
+}
+
+.attribution {
+  text-align: center;
+  color: #2f415b;
+  font-size: 1rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #8bacda;
+}
+
+.attribution a:hover {
+  color: #00fff7;
+  border-bottom: solid 1px #00fff7;
 }
 /*# sourceMappingURL=main.css.map */
